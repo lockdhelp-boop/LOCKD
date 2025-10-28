@@ -1,26 +1,44 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>LOCKD – Focus & Discipline App</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>LOCKD — Legal</title>
   <style>
-    body { font-family: -apple-system, Helvetica, Arial; background-color: #0c0f16; color: white; text-align: center; padding: 60px 20px; }
-    h1 { color: #00bfff; }
-    a { color: #00bfff; text-decoration: none; }
-    .container { max-width: 600px; margin: auto; }
+    :root { color-scheme: dark; }
+    body {
+      margin: 0; font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Inter, Arial, sans-serif;
+      background:#0b0c10; color:#e6f0ff; display:flex; min-height:100vh; align-items:center; justify-content:center;
+    }
+    .wrap { max-width:880px; width:100%; padding:40px 24px; text-align:center; }
+    h1 { margin:0 0 16px; font-size:34px; letter-spacing:.2px; }
+    p.lead { color:#9fb4ff; margin:0 0 28px; }
+    .cards { display:grid; grid-template-columns:repeat(auto-fit,minmax(260px,1fr)); gap:16px; margin-top:24px; }
+    a.card {
+      display:block; padding:20px 18px; border:1px solid #1d2233; border-radius:14px; text-decoration:none;
+      background:linear-gradient(180deg,#0e1220,#0c0f1b); color:#e6f0ff; transition:transform .15s ease, border-color .15s ease;
+    }
+    a.card:hover { transform:translateY(-2px); border-color:#2a3666; }
+    .foot { margin-top:28px; font-size:14px; color:#8aa0ff; opacity:.8; }
   </style>
 </head>
 <body>
-  <div class="container">
-    <h1>LOCKD</h1>
-    <p>Take control of your focus and screen time on your own terms.</p>
-    <p>Built using Apple’s FamilyControls and DeviceActivity APIs, LOCKD empowers users to choose when and how to stay focused — no distractions, just discipline.</p>
-    <p>
-      <a href="privacy.html">Privacy Policy</a> • 
-      <a href="terms.html">Terms & Conditions</a>
-    </p>
-    <p>Contact: <a href="mailto:lockdhelp@gmail.com">lockdhelp@gmail.com</a></p>
-  </div>
+  <main class="wrap">
+    <h1>LOCKD — Legal</h1>
+    <p class="lead">Find our Privacy Policy and Terms of Service below.</p>
+
+    <div class="cards">
+      <a class="card" href="privacy.html">
+        <h2 style="margin:0 0 8px;font-size:20px;">Privacy Policy</h2>
+        <p style="margin:0;color:#b6c6ff;">How we collect, use, and protect your data.</p>
+      </a>
+      <a class="card" href="terms.html">
+        <h2 style="margin:0 0 8px;font-size:20px;">Terms of Service</h2>
+        <p style="margin:0;color:#b6c6ff;">Rules for using LOCKD and your rights.</p>
+      </a>
+    </div>
+
+    <div class="foot">© 2025 LOCKD (by Zane Tuning). All rights reserved. • Contact: lockdhelp@gmail.com</div>
+  </main>
 </body>
 </html>
