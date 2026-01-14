@@ -7,10 +7,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="robots" content="noindex, nofollow">
 
-  <!-- Attempt redirect (will fail inside TikTok, succeed in browser) -->
+  <!-- Attempt redirect (fails in TikTok, works in browser) -->
   <script>
     setTimeout(() => {
-      window.location.href = "https://apps.apple.com/us/app/lockd-daily-habits-focus/id6753994810";
+      window.location.href =
+        "https://apps.apple.com/us/app/lockd-daily-habits-focus/id6753994810";
     }, 300);
   </script>
 
@@ -23,7 +24,7 @@
       min-height: 100vh;
       display: flex;
       justify-content: center;
-      align-items: center;
+      align-items: flex-start; /* push content toward top */
     }
 
     .wrap {
@@ -31,6 +32,7 @@
       max-width: 420px;
       padding: 24px;
       text-align: center;
+      margin-top: 72px; /* controls how high the notice sits */
     }
 
     .notice {
@@ -66,7 +68,7 @@
 <body>
   <div class="wrap">
 
-    <!-- Instruction bubble -->
+    <!-- TikTok instruction -->
     <div class="notice">
       On TikTok in the top right, tap the three dots (•••) and select
       <strong>“Open in browser”</strong> to go to app
