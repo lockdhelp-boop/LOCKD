@@ -3,13 +3,12 @@
 <head>
   <meta charset="UTF-8">
 
-  <!-- Attempt redirect (works in Safari, blocked in TikTok in-app browser) -->
-  <meta http-equiv="refresh" content="1.5; url=https://apps.apple.com/us/app/lockd-daily-habits-focus/id6753994810">
+  <!-- Delay redirect slightly (TikTok-safe) -->
+  <meta http-equiv="refresh" content="1; url=https://apps.apple.com/us/app/lockd-daily-habits-focus/id6753994810">
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="robots" content="noindex, nofollow">
 
-  <!-- Social preview (optional) -->
   <meta property="og:title" content="LOCKD – Daily Habits & Focus">
   <meta property="og:description" content="Build discipline. Stay locked in.">
   <meta property="og:type" content="website">
@@ -23,27 +22,15 @@
       color: #fff;
       text-align: center;
       padding: 40px 20px;
-      margin: 0;
     }
-
-    h1 {
-      font-size: 22px;
-      margin-bottom: 8px;
-    }
-
-    p {
-      font-size: 15px;
-      opacity: 0.8;
-    }
-
     a {
       display: inline-block;
-      margin-top: 24px;
+      margin-top: 20px;
       padding: 14px 22px;
-      background: #ffffff;
-      color: #000;
+      background: #1e90ff;
+      color: #fff;
       text-decoration: none;
-      border-radius: 12px;
+      border-radius: 10px;
       font-weight: 600;
     }
 
@@ -54,13 +41,13 @@
       right: 10px;
       font-size: 46px;
       z-index: 9999;
-      pointer-events: none; /* don't block taps */
+      pointer-events: none;
     }
   </style>
 </head>
 
 <body>
-  <!-- Emoji hint for TikTok users -->
+  <!-- Emoji overlay (does not affect layout) -->
   <div class="arrow-hint">↗️</div>
 
   <h1>Opening the App Store…</h1>
