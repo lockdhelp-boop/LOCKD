@@ -2,101 +2,72 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Lock In – Download</title>
+
+  <!-- Attempt redirect (works in Safari, blocked in TikTok in-app browser) -->
+  <meta http-equiv="refresh" content="1.5; url=https://apps.apple.com/us/app/lockd-daily-habits-focus/id6753994810">
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="robots" content="noindex, nofollow">
 
-  <!-- Attempt redirect (fails in TikTok, works in browser) -->
-  <script>
-    setTimeout(() => {
-      window.location.href =
-        "https://apps.apple.com/us/app/lockd-daily-habits-focus/id6753994810";
-    }, 300);
-  </script>
+  <!-- Social preview (optional) -->
+  <meta property="og:title" content="LOCKD – Daily Habits & Focus">
+  <meta property="og:description" content="Build discipline. Stay locked in.">
+  <meta property="og:type" content="website">
+
+  <title>Get LOCKD</title>
 
   <style>
     body {
-      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, sans-serif;
       background: #000;
       color: #fff;
-      font-family: -apple-system, BlinkMacSystemFont, sans-serif;
-      min-height: 100vh;
-      display: flex;
-      justify-content: center;
-      align-items: flex-start; /* push content toward top */
-    }
-
-    .wrap {
-      width: 100%;
-      max-width: 420px;
-      padding: 24px;
       text-align: center;
-      margin-top: 72px; /* controls how high the notice sits */
-    }
-
-    .notice {
-      background: #1c1c1e;
-      border-radius: 16px;
-      padding: 16px;
-      margin-bottom: 40px;
-      font-size: 14px;
-      line-height: 1.4;
-      color: #e5e5e7;
-    }
-
-    .icon {
-      width: 120px;
-      height: 120px;
-      border-radius: 28px;
-      margin: 0 auto 24px;
-      box-shadow: 0 12px 30px rgba(0,0,0,0.7);
+      padding: 40px 20px;
+      margin: 0;
     }
 
     h1 {
-      font-size: 26px;
-      font-weight: 700;
-      margin-bottom: 28px;
+      font-size: 22px;
+      margin-bottom: 8px;
     }
 
-    .store img {
-      width: 180px;
+    p {
+      font-size: 15px;
+      opacity: 0.8;
+    }
+
+    a {
+      display: inline-block;
+      margin-top: 24px;
+      padding: 14px 22px;
+      background: #ffffff;
+      color: #000;
+      text-decoration: none;
+      border-radius: 12px;
+      font-weight: 600;
+    }
+
+    /* BIG emoji pointing to TikTok menu */
+    .arrow-hint {
+      position: fixed;
+      top: 8px;
+      right: 10px;
+      font-size: 46px;
+      z-index: 9999;
+      pointer-events: none; /* don't block taps */
     }
   </style>
 </head>
 
 <body>
-  <div class="wrap">
+  <!-- Emoji hint for TikTok users -->
+  <div class="arrow-hint">↗️</div>
 
-    <!-- TikTok instruction -->
-    <div class="notice">
-          In the top right, tap the three dots (•••) and select
-      <strong>“Open in browser”</strong> to go to app
-    </div>
+  <h1>Opening the App Store…</h1>
+  <p>If nothing happens, tap the button below.</p>
 
-    <!-- App icon -->
-    <img
-      src="app-icon.png"
-      alt="LOCKD App Icon"
-      class="icon"
-    >
-
-    <!-- App name -->
-    <h1>LOCKD: Focus & Habit Tracker</h1>
-
-    <!-- App Store button -->
-    <a
-      class="store"
-      href="https://apps.apple.com/us/app/lockd-daily-habits-focus/id6753994810"
-      target="_blank"
-      rel="noopener"
-    >
-      <img
-        src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg"
-        alt="Download on the App Store"
-      >
-    </a>
-
-  </div>
+  <a href="https://apps.apple.com/us/app/lockd-daily-habits-focus/id6753994810">
+    Download LOCKD
+  </a>
 </body>
 </html>
